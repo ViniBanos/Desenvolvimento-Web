@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quitanda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quitanda</h1>
+        
+        <label for="fruta">Escolha a fruta:</label>
+        <select id="fruta">
+            <option value="1.50">Laranja - R$ 1,50</option>
+            <option value="2.00">Banana - R$ 2,00</option>
+            <option value="3.00">Maçã - R$ 3,00</option>
+            <option value="5.00">Uva - R$ 5,00</option>
+        </select>
+        
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" value="1" min="1">
+        
+        <button onclick="obterDados()">Adicionar ao carrinho</button>
+       
+        
+        <h2>Carrinho</h2>
+        <ul id="carrinho"></ul>
+
+       
+        
+        <p class="total">Total: <span id="total">R$0.00</span></p>
+
+        <button onclick="limparCarrinho()">Limpar Carrinho</button>
+
+        <button onclick="irParaPagamento()">Ir para Pagamento</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
