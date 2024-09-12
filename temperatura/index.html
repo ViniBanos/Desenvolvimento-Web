@@ -1,0 +1,46 @@
+<-- Feito por: Vinicius Baños  --> 
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversões de Temperaturas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Conversões de Temperaturas</h1>
+
+        <form id="formTemperatura">
+            <b>Selecione a Opção Abaixo:</b>
+            <br>
+            <label>
+                <input type="radio" name="conversionType" id="tempCelsiusFahrenheit" value="celsiusToFahrenheit">Celsius para Fahrenheit
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="conversionType" id="tempFahrenheitCelsius" value="fahrenheitToCelsius">Fahrenheit para Celsius
+            </label>
+            <br><br>
+            <b>Converter valor</b>
+            <br><br>
+            <label>
+                <input type="number" name="conversion" id="temp" placeholder="Insira a temperatura">
+            </label>
+            <br>
+            <button type="button" onclick="CalcularTemperatura()">Calcular</button>
+            <button type="reset">Limpar</button>
+            <br><br>
+            <b>Resposta</b>
+            <br><br>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
